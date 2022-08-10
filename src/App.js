@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import PetNav from './components/pet-nav'
-import PictureBox from './components/picture-box'
+import PetNav from './components/pet-nav';
+import PictureBox from './components/picture-box';
+import AboutMe from './components/about-box';
+import Posts from './components/posts';
+import Footer from './components/footer';
 import './App.css';
 
 const App = () => {
@@ -10,15 +13,22 @@ const App = () => {
     return(
       <div className="App">
         <PetNav/>
-        <div class="container">
-          <div class="row">
-            //Add profile picture and about section here
+        <div className="container">
+            <div className="row">
+            <PictureBox/>
+            <AboutMe/>
+            </div>
+          </div>
+          <div className="row">
+             
           </div>
           <div class="row">
-            //Add posts here
+            <Posts/>
           </div>
+          <div class="row">
+              <Footer/>
+            </div>
         </div>
-      </div>
     )
   }
 
